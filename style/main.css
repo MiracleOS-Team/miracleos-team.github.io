@@ -1,0 +1,194 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+    --color-bg: #111111;
+    --color-text-main: #FFFFFF;
+    --color-primary: #FFFFFF;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  * {
+    box-sizing: border-box;
+    color: #FFFFFF;
+  }
+  
+  [hidden] {
+    display: none !important;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto 0;
+    padding: 1rem 0 0.75rem 0;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 4px solid #333333;
+  }
+  
+  .footer .links {
+    padding: 0.5rem 1rem 1.5rem;
+    white-space: nowrap;
+  }
+  
+  html, body {
+    font-family: sans-serif;
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar {
+    width: 100vw;
+    height: 70px;
+    color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    z-index: 1;
+  }
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+  }
+  
+  .banner {
+    width: 100%;
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 50%, transparent);
+    -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 50%, transparent);
+    -o-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 50%, transparent);
+    -moz-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 50%, transparent);
+    -ms-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 50%, transparent);
+    animation: fadeIn 5s;
+    user-select: none;
+  }
+  #logonavbar{
+    height: 100%;
+    animation: slideDown 2s ease-out;
+    user-select: none;
+  }
+  #slogan{
+    position: absolute;
+    z-index: 2;
+    padding-top: 10%;
+    font-size: 5rem;
+    animation: slideDown 3s ease-out;
+    user-select: none;
+  }
+  #download{
+    z-index: 1;
+    position: absolute;
+    margin-top: 20%;
+    font-size: 2.5rem;
+    background-color:  #b828d9;
+    border: none;
+    padding: 1%;
+    border-radius: 4px;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  #download-section{
+    margin-right: 38%;
+    position: absolute;
+    font-size: 1.5rem;
+    text-decoration: none;
+    user-select: none;
+  }
+  #home-section{
+    position: absolute;
+    margin-right: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    user-select: none;
+  }
+  .navbar-shortcuts{
+    padding: 1%;
+  }
+  #navbar-name{
+    user-select: none;
+  }
+
+
+
+
+
+
+  
+
+
+@media(max-width: 1280px){
+  #slogan{
+    font-size: 2rem;
+  }
+}
+@media(max-width: 440px){
+  #slogan{
+    font-size: 1rem;
+    margin-top: 20%;
+  }
+
+}
+
+
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    
+    

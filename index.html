@@ -14,21 +14,46 @@
   </head>
   <body>
     <div class="navbar">
-      <a class="navbar-shortcuts" id="home-section" href="index.html">Home</a>
-      <a class="navbar-shortcuts"  id="download-section" href="download/index.html">Download</a>
+      <div id="navbar-buttons-left" class="navbar-buttons">
+        <a class="navbar-shortcuts" id="home-section" href="index.html">Home</a>
+        <a class="navbar-shortcuts"  id="download-section" href="download/index.html">Download</a>
+      </div>
       <img id="logonavbar" src="brand/color.png" alt="">
-      <h2 id="navbar-name">
-        MiracleOS: The OS that works like a miracle
-      </h2>
+      <h2 id="navbar-name">MiracleOS</h2>
     </div>
-    <img class="banner" src="brand/banner2.png">
     <p id="slogan">The Friendly and Powerful OS for everyone</p>
     <button id="download"> Download </button>
-    <!-- Commented because it's not working
+    <button id="learn-more">Learn more</button>
+    <!--</1><img class="banner" src="brand/banner2.png">
+    Commented because it's not working
     <div class="videoWrapper">
       <iframe class="video" src="https://www.youtube.com/embed/u3221gLpCv0?si=tcvREDjhbBOtZW_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>-->
-    <footer class="footer">
-    </footer>
+    <p id="whyus">Why MiracleOS?</p>
+    <div id="whyus-boxes">
+      <div id="box1" class="boxes">
+      </div>
+      <div id="box2" class="boxes inside-boxes">
+        <img class="grid-imgs" src="misc-images/user.svg">
+        <p class="inside-boxes box-text-inside">User First Model</p>
+        <p id="box1-text">In MiracleOS, a good experience for the user is always the first thing we lookout for, independent if they are an experienced user or not</p>
+      </div>
+      <div id="box3" class="boxes inside-boxes">
+        <img class="grid-imgs" src="misc-images/joystick.svg">
+        <p>Gaming</p>
+        <p>Play Steam games with Valve's Proton compability layer for Linux</p>
+      </div>
+      <div id="box4" class="boxes"> </div>
+      <div id="box5" class="boxes  inside-boxes"> 
+        <img class="grid-imgs" src="misc-images/50-503693_png-file-rocks-icon-transparent-png-removebg.png">
+        <p class="stability box-text-inside">Rock Solid Stability</p>
+        <p class="stability">MiracleOS provides rock solid stability, free from any system instability</p> 
+      </div>
+      <div id="box6" class="boxes inside-boxes">
+      <img src="misc-images/rotate-left.svg" class="grid-imgs">
+      <p>Easy Rollbacks</p>
+      <p>The BTRFS filesystem allows you to rollback a system to a certain point in time if anything bad happens</p>
+      </div>
+    </div> 
   </body>
 </html>

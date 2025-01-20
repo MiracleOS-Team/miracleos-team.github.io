@@ -242,7 +242,7 @@ p {
     width: 30vw;
     border-radius: 2%;
 }
-
+#logonavbar
 .inside-boxes {
     text-align: center;
     font-size: 1.5rem;
@@ -253,9 +253,6 @@ p {
 }
 .box-text-inside {
     font-weight: bold;
-}
-.stability {
-    font-size: 1.5rem;
 }
 .grid-imgs {
     height: 22%;
@@ -373,15 +370,40 @@ img {
 }
 @media (max-width: 1280px) {
     #slogan {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     #download{
-        margin-top: 17%;
+        margin-top: 18%;
         font-size: 1.8rem;
     }
     #learn-more{
-        margin-top: 23%;
+        margin-top: 24%;
         font-size: 1.3rem    
+    }
+    #navbar-buttons-right {
+        margin-left: 35%;
+    }
+    #logonavbar{
+        margin-right: 14.8%;
+    }
+    #navbar-buttons-left {
+        margin-right: 45%;
+    }
+    #system-reqs{
+        margin-top: 110%;
+    }
+    .parent{
+        margin-top: 120%;
+    }
+    .system-reqs-class {
+        font-size: 3.2vh;
+    }
+    #whyus{
+        font-size: 3.5rem;
+    }
+    .inside-boxes{
+        text-align: center;
+        font-size: 1.1rem;
     }
 }
 @media (max-width: 440px) {

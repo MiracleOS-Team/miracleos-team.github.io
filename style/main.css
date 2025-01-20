@@ -105,19 +105,13 @@ html {
 
 .cta-buttons * {
     margin: 15px;
+    font-size: 2rem;
 }
 
 .slogan-container {
     text-align: center;
 }
 
-.download {
-    font-size: 2rem;
-}
-.learn-more {
-    
-    font-size: 2rem;
-}
 
 #slogan {
     z-index: 10;
@@ -292,6 +286,7 @@ td {
 @media (max-width: 1280px) {
     .main {
         margin: 0px;
+        padding: 10px;
     }
     #whyus-boxes {
         grid-template-columns: repeat(1, 1fr);
@@ -317,6 +312,26 @@ td {
     html {
         background: #111111;
     }
+    .cta-buttons *{
+        font-size: 1.75rem;
+        padding: 15px;
+    }
+    #slogan {
+        font-size: 3rem;
+    }
+    #whyus {
+        font-size: 2rem;
+    }
+    #system-reqs {
+        font-size: 2rem;
+    }
+    .navbar-buttons, .navbar-shortcuts {
+        font-size: 1rem;
+    }
+    .logonavbar {
+        height: 50%;
+    }
+
 }
 
 

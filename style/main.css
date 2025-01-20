@@ -57,7 +57,7 @@ body {
 }
 
 html {
-    background-image: url("brand/wallp.jpg");
+    background-image: url("../brand/wallp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     size: 100%;

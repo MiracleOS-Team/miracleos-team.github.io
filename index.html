@@ -14,7 +14,7 @@
     <body>
         <div class="navbar">
             <div id="navbar-buttons-left" class="navbar-buttons">
-                <a class="navbar-shortcuts navbar-anchors" href="index.html"
+                <a class="navbar-shortcuts navbar-anchors mobile-hide-inline" href="index.html"
                     >Home</a
                 >
                 <a
@@ -23,21 +23,24 @@
                     >Download</a
                 >
                 <a
-                    class="navbar-shortcuts navbar-anchors"
+                    class="navbar-shortcuts navbar-anchors mobile-hide-inline"
                     href="wiki/index.html"
                     >Wiki</a
                 >
             </div>
-            <img id="logonavbar" src="brand/color.png" alt="" />
-            <h2 id="navbar-name">MiracleOS</h2>
+            
+                <img id="logonavbar" src="brand/color.png" alt="" />
+                <h2 id="navbar-name">MiracleOS</h2>
+            
+            
             <div class="navbar-buttons" id="navbar-buttons-right">
                 <a
-                    class="navbar-anchors navbar-buttons navbar-shortcuts"
+                    class="navbar-anchors navbar-buttons navbar-shortcuts mobile-hide-inline"
                     href="contribute/index.html"
                     >Contribute</a
                 >
                 <a
-                    class="navbar-anchors navbar-buttons navbar-shortcuts"
+                    class="navbar-anchors navbar-buttons navbar-shortcuts mobile-hide-inline"
                     href="https://packages.gentoo.org"
                     >Packages</a
                 >
@@ -48,76 +51,156 @@
                 >
             </div>
         </div>
-        <p id="slogan">The Friendly and Powerful OS for everyone</p>
-        <button id="download">Download</button>
-        <button id="learn-more">Learn more</button>
-        <p id="whyus">Why MiracleOS?</p>
-        <div id="whyus-boxes">
-            <div id="box1" class="boxes inside-boxes">
-                <img class="grid-imgs" src="misc-images/magic-wand.svg" />
-                <p>Works Out of the Box</p>
-                <p>
-                    The OS is made to work Out of the Box, without any necessary
-                    user intervetion for it to work
-                </p>
+        <div class="mains-main">
+
+        
+            <div class="main">
+                
+                <div class="slogan-container">
+                    <p id="slogan">A Friendly and Powerful OS for everyone</p>
+                    <div class="cta-buttons">
+                        <button class="download mobile-hide-inline">Download</button>
+                        <button class="learn-more">Learn more</button>
+                    </div>
+                </div>
+                
+                
+                <p id="whyus">Why use MiracleOS?</p>
+                <div id="whyus-boxes">
+                    <div class="boxes inside-boxes">
+                        <img src="misc-images/magic-wand.svg" />
+                        <div>
+                            <p class="b-title">Works Out of the Box<br/></p>
+                            <p>
+                                The OS is made to work Out of the Box, without any necessary
+                                user intervetion for it to work
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes inside-boxes">
+                        <img src="misc-images/user.svg" />
+                        <div>
+                            <p class="b-title">User First Model<br/></p>
+                            <p id="box1-text">
+                                We in MiracleOS always strive for a good user experience, independent if they're a experienced user or not
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes inside-boxes">
+                        <img src="misc-images/joystick.svg" />
+                        <div>
+                            <p class="b-title">Gaming<br/></p>
+                            <p>
+                                Play Steam games with Valve's Proton compability layer for
+                                Linux
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes inside-boxes">
+                        <img src="misc-images/box-open.svg" />
+                        <div>
+                            <p class="b-title">Big selection of apps<br/></p>
+                            <p>
+                                MiracleOS provides a big selection of apps for the user,
+                                such as Steam and Firefox
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes inside-boxes">
+                        <img src="misc-images/IMG_3325.png" />
+                        <div>
+                            <p class="b-title">Rock Solid Stability<br/></p>
+                            <p class="stability">
+                                MiracleOS provides rock solid stability, free from any
+                                system instability
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes inside-boxes">
+                        <img src="misc-images/rotate-left.svg" />
+                        <div>
+                            <p class="b-title">Easy Rollbacks<br/></p>
+                            <p>
+                                The BTRFS filesystem allows you to rollback a system to a
+                                certain point in time if anything bad happens
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <p id="system-reqs">System Requirements</p>
+                <table class="system-reqs-table mobile-hide-block" >
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>CPU</th>
+                            <th>Space</th>
+                            <th>GPU</th>
+                            <th>Boot type</th>
+                            <th>RAM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Minimum</td>
+                            <td>2Ghz+ 64 bit CPU</td>
+                            <td>20GB</td>
+                            <td>Any GPU made after 2000 and supported by Linux</td>
+                            <td>BIOS</td>
+                            <td>2Gb</td>
+                        </tr>
+                        <tr>
+                            <td>Recommended</td>
+                            <td>3Ghz+ 64 bit CPU</td>
+                            <td>100GB+</td>
+                            <td>A Vulkan Capable GPU</td>
+                            <td>UEFI</td>
+                            <td>8Gb</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="system-reqs-table mobile-show-block">
+                    <thead>
+                        <tr>
+                            <th>System Requirements</th>
+                            <th>Minimum</th>
+                            <th>Recommended</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CPU</td>
+                            <td>2Ghz+ 64 bit CPU</td>
+                            <td>3Ggz+ 64 bit CPU</td>
+                        </tr>
+                        <tr>
+                            <td>Space</td>
+                            <td>20GB</td>
+                            <td>100GB+</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>Any GPU made after 2000 and supported by Linux</td>
+                            <td>A Vulkan Capable GPU</td>
+                        </tr>
+                        <tr>
+                            <td>Boot type</td>
+                            <td>BIOS</td>
+                            <td>UEFI</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>2Gb</td>
+                            <td>8Gb</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div id="box2" class="boxes inside-boxes">
-                <img class="grid-imgs" src="misc-images/user.svg" />
-                <p class="inside-boxes box-text-inside">User First Model</p>
-                <p id="box1-text">
-                    We in MiracleOS always strive for a good user experience, independent if they're a experienced user or not
-                </p>
-            </div>
-            <div id="box3" class="boxes inside-boxes">
-                <img class="grid-imgs" src="misc-images/joystick.svg" />
-                <p>Gaming</p>
-                <p>
-                    Play Steam games with Valve's Proton compability layer for
-                    Linux
-                </p>
-            </div>
-            <div id="box4" class="boxes inside-boxes">
-                <img class="grid-imgs" src="misc-images/box-open.svg" />
-                <p>Big selection of apps</p>
-                <p>
-                    MiracleOS provides a big selection of apps for the user,
-                    such as Steam and Firefox
-                </p>
-            </div>
-            <div id="box5" class="boxes inside-boxes">
-                <img class="grid-imgs" src="misc-images/IMG_3325.png" />
-                <p class="stability box-text-inside">Rock Solid Stability</p>
-                <p class="stability">
-                    MiracleOS provides rock solid stability, free from any
-                    system instability
-                </p>
-            </div>
-            <div id="box6" class="boxes inside-boxes">
-                <img src="misc-images/rotate-left.svg" class="grid-imgs" />
-                <p>Easy Rollbacks</p>
-                <p>
-                    The BTRFS filesystem allows you to rollback a system to a
-                    certain point in time if anything bad happens
-                </p>
-            </div>
-        </div>
-        <p id="system-reqs">System Requirements</p>
-        <div class="parent">
-            <div class="div1 system-reqs-class">System Requirements</div>
-            <div class="div2 system-reqs-class">Minimum</div>
-            <div class="div3 system-reqs-class">Reccomended</div>
-            <div class="div4 system-reqs-class">CPU</div>
-            <div class="div5 system-reqs-class">Space</div>
-            <div class="div6 system-reqs-class">GPU</div>
-            <div class="div7 system-reqs-class">Boot type</div>
-            <div class="div8 system-reqs-class">2GHZ+ 64 bit CPU</div>
-            <div class="div9 system-reqs-class">3GHZ+ 64 bit CPU</div>
-            <div class="div10 system-reqs-class">20GB</div>
-            <div class="div11 system-reqs-class">40GB+</div>
-            <div class="div12 system-reqs-class"> Any GPU above 2010(AMD or Nvidia)</div>
-            <div class="div13 system-reqs-class">BIOS</div>
-            <div class="div14 system-reqs-class">A Vulkan Capable GPU</div>
-            <div class="div15 system-reqs-class">UEFI</div>
         </div>
     </body>
 

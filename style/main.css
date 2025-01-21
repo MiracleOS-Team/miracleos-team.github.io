@@ -3,24 +3,6 @@
 *Make it responsive -> needs more testing
 *Nothing more, really :P
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 :root {
     --color-bg: #111111;
@@ -291,6 +273,9 @@ td {
         margin: 0px;
         padding: 10px;
     }
+    .mains-main {
+        padding-top: 70px;
+    }
     #whyus-boxes {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -335,7 +320,12 @@ td {
     .logonavbar {
         height: 50%;
     }
-
+    .navbar-buttons {
+        width: 100%;
+    }
+    .navbar-shortcuts {
+        margin: 15px;
+    }
 }
 
 

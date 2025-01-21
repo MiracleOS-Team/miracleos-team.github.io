@@ -330,6 +330,7 @@ td {
     }
     .navbar-buttons, .navbar-shortcuts {
         font-size: 1rem;
+        width: 100%;
     }
     .logonavbar {
         height: 50%;

@@ -107,7 +107,7 @@ html {
 }
 
 #logonavbar {
-    margin-left: 25px;
+    margin: 10px;
     height: 100%;
 
     user-select: none;

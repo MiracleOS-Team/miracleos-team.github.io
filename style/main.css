@@ -271,7 +271,7 @@ td {
 }
 
 .dropdown{
-    visibility: hidden;
+    display: none;
     background-color: transparent;
 }
 

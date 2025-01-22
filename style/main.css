@@ -276,13 +276,18 @@ td {
     display: none;
 }
 
+.dropdown{
+    background-color: transparent;
+}
 
 
 #navbar-buttons-left,
 #navbar-buttons-right {
     flex: 0;
 }
-
+.dropdown-menu{
+    display: none;
+}
 @media (max-width: 1280px) {
     .main {
         margin: 0px;
@@ -333,7 +338,60 @@ td {
     }
 
 }
-
+@media (max-width: 440px) {
+    .navbar-buttons{
+        visibility: hidden;
+    }
+    .dropdown{
+        visibility: visible;
+    }
+    .dropdown:hover{
+        cursor: pointer;
+    } 
+    .dropdown-menu{
+        display: flex;
+        color: white;
+        margin-top: 8vh;
+        justify-content: center;
+        align-items: center;
+        list-style-type:none;
+        margin: auto;
+        gap: 3px;
+        flex-direction: column;
+        visibility: visible;
+        overflow-x: hidden;
+    } 
+    .dropdown-button:hover{
+        cursor: pointer;
+    }
+    .dropdown-btn{
+        background-color: #b828d9;
+        border-radius: 3px;
+        font-size: 1rem;
+        padding: 5%;
+        padding-left:60%;
+        padding-right:60%;
+    }
+    #home-mobile-btn{
+        margin-top: 8vh;
+    }
+    .dropdown-hide{
+        display: none;
+    }
+    #mobile-dropdown{
+        margin-left: 48%;
+        overflow-x: hidden;
+    }
+    #logonavbar{
+        position: absolute;
+        margin-right: 25px;
+    }
+}
+@media(max-width: 380px){
+    #home-mobile-btn{
+        margin-top: 10vh;
+    }
+}
 
 @keyframes slideDown {
     0% {

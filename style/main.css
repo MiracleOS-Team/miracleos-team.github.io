@@ -273,14 +273,16 @@ td {
 .dropdown{
     background-color: transparent;
 }
-
+#mobile-dropdown{
+    display: none;
+}
 
 #navbar-buttons-left,
 #navbar-buttons-right {
     flex: 0;
 }
 .dropdown-menu{
-    display: none;
+    visibility: hidden;
 }
 
 @media (max-width: 1280px) {
@@ -300,9 +302,7 @@ td {
     .mobile-show-block {
         display: block
     }
-    .mobile-hide-inline {
-        display: none;
-    }
+
     .mobile-show-inline {
         display: inline
     }
@@ -338,15 +338,12 @@ td {
 
 }
 @media (max-width: 440px) {
+    .mobile-hide-inline {
+        display: none;
+    }
     .navbar-buttons{
-        visibility: hidden;
+        display: none;
     }
-    .dropdown{
-        visibility: visible;
-    }
-    .dropdown:hover{
-        cursor: pointer;
-    } 
     .dropdown-menu{
         display: flex;
         color: white;
@@ -355,7 +352,7 @@ td {
         align-items: center;
         list-style-type:none;
         margin: auto;
-        gap: 3px;
+        gap: 5px;
         flex-direction: column;
         visibility: visible;
         overflow-x: hidden;
@@ -372,23 +369,24 @@ td {
         padding-right:60%;
     }
     #home-mobile-btn{
-        margin-top: 8vh;
+        margin-top: 0vh;
     }
     .dropdown-hide{
         display: none;
     }
-    #mobile-dropdown{
+    #mobile-dropdow-menu{
         margin-left: 48%;
         overflow-x: hidden;
     }
     #logonavbar{
         position: absolute;
-        margin-right: 25px;
+        margin-left: 3.8%;
     }
-}
-@media(max-width: 380px){
-    #home-mobile-btn{
-        margin-top: 10vh;
+    #mobile-dropdown{
+        display: flex;
+        margin-left: 80%;
+        position: absolute;
+        visibility: visible;
     }
 }
 

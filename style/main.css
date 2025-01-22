@@ -121,7 +121,7 @@ html {
 }
 
 .navbar-center {
-    width: 50%;
+    width: 20%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -136,12 +136,10 @@ button:hover {
     font-size: 1.5rem;
     text-decoration: none;
     user-select: none;
-    width: 100%;
 }
 .navbar-shortcuts {
     padding: 1%;
     margin: 15px;
-    width: 100%;
     text-align: center;
 }
 
@@ -176,7 +174,6 @@ p {
     flex-direction: row;
     position: relative;
     animation: fadeIn 0.75s;
-    width: 100%;
 }
 
 #whyus-boxes {

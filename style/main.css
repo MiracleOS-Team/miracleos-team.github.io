@@ -271,10 +271,8 @@ td {
 }
 
 .dropdown{
-    background-color: transparent;
-}
-#mobile-dropdown{
     visibility: hidden;
+    background-color: transparent;
 }
 
 #navbar-buttons-left,

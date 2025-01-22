@@ -274,13 +274,14 @@ td {
     background-color: transparent;
 }
 #mobile-dropdown{
-    display: none;
+    visibility: hidden;
 }
 
 #navbar-buttons-left,
 #navbar-buttons-right {
     flex: 0;
 }
+
 .dropdown-menu{
     visibility: hidden;
 }

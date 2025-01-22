@@ -121,9 +121,11 @@ html {
 }
 
 .navbar-center {
-    width: 100%;
+    width: 20%;
     height: 70px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover {
@@ -138,8 +140,9 @@ button:hover {
 }
 .navbar-shortcuts {
     padding: 1%;
-    margin-left: 15px;
+    margin: 15px;
     width: 100%;
+    text-align: center;
 }
 
 footer {

@@ -336,7 +336,7 @@ td {
     }
 
 }
-@media (max-width: 440px) {
+@media (max-width: 899px) {
     .mobile-hide-inline {
         display: none;
     }
@@ -360,12 +360,15 @@ td {
         cursor: pointer;
     }
     .dropdown-btn{
-        background-color: #b828d9;
+        background: linear-gradient(to right, orange, #b828d9);
         border-radius: 3px;
         font-size: 1rem;
         padding: 5%;
         padding-left:60%;
         padding-right:60%;
+    }
+    .dropdown-btn:hover {
+        background: linear-gradient(to right, rgb(255, 115, 0), #d000ff);
     }
     #home-mobile-btn{
         margin-top: 0vh;

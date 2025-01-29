@@ -37,9 +37,9 @@ body {
 .main-content,
 footer {
     transition: all 1s;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-    margin: 10% 5%;
+    margin: 10%;
     overflow: auto;
     padding: 2.5em;
     border-radius: 15px;
@@ -57,12 +57,13 @@ footer {
     padding: 10px 20px;
 }
 
-.cta-buttons button:nth-of-type(1) {
+/* TODO - change when we add back buttons at index.html */
+.cta-buttons a:nth-of-type(1) button {
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 }
 
-.cta-buttons button:nth-of-type(2) {
+.cta-buttons a:nth-of-type(2) button {
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
 }
@@ -100,6 +101,7 @@ footer {
     top: 0%;
     left: 0%;
     right: 0%;
+    animation: fadeIn 0.75s;
 }
 
 .navbar-brand {
@@ -135,7 +137,6 @@ footer {
     font-size: 1.25rem;
     text-decoration: none;
     text-align: center;
-    animation: fadeIn 0.75s;
 }
 
 .navbar-link:hover {
@@ -146,22 +147,24 @@ h2 {
     z-index: 1;
     font-size: 3rem;
     margin: 20px 0px 10px 0px;
-    animation: fadeIn 0.75s;
     font-weight: 600;
 }
 
 button {
-    background: rgba(255, 115, 0, 0.4);
+    background-color: rgba(255, 115, 0, 0.4);
     border: none;
     cursor: pointer;
     padding: 1%;
-    border-radius: 15px !important;
-    animation: fadeIn 0.75s;
-    transition: all 1s;
+    border-radius: 10px;
+    transition: background-color 1s;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: medium;
 }
 
 button:hover {
-    background: rgba(255, 115, 0, 0.8);
+    background: rgba(255, 115, 0, 1);
+    color: black;
 }
 
 .grad-bg {

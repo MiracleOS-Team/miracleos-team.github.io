@@ -6,15 +6,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
 
-:root {
-    --color-bg: #111111;
-    --color-text-main: #ffffff;
-    --color-primary: #ffffff;
-    --wrapper-height: 87vh;
-    --image-max-width: 300px;
-    --image-margin: 3rem;
-}
-
 * {
     box-sizing: border-box;
     color: #ffffff;
@@ -34,6 +25,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 body {
     background-image: url("../brand/wallpaper.jpg");
     background-repeat: no-repeat;
@@ -42,10 +34,11 @@ body {
     min-height: 100vh;
 }
 
-.main, footer {
+.main,
+footer {
     transition: all 1s;
     background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     margin: 10% 5%;
     overflow: auto;
     padding: 2.5em;
@@ -105,14 +98,14 @@ body {
     height: 80px;
     padding: 20px 0px;
     color: white;
+    gap: 100px;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 399;
     top: 0%;
     left: 0%;
     right: 0%;
@@ -124,7 +117,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
+}
+
+.navbar-brand h3 {
+    font-size: x-large;
+    font-weight: 600;
 }
 
 .navbar-brand img {
@@ -150,11 +147,11 @@ body {
     animation: fadeIn 0.75s;
 }
 
-footer {
-    margin-top: 0;
+.navbar-link:hover {
+    color: rgb(255, 165, 0) !important;
 }
 
-#why-us {
+h2 {
     z-index: 1;
     font-size: 3rem;
     margin: 20px 0px 10px 0px;
@@ -253,22 +250,21 @@ button:hover {
     margin: 0;
 }
 
-#system-requirements {
-    font-weight: bold;
-    font-size: 3rem;
-}
-
 .system-requirements-table {
     background-color: rgba(184, 40, 217, 0.2);
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
     border-radius: 15px;
     width: 100%;
-    text-align: center;
 }
 
 td {
-    text-align: center;
+    padding: 5px;
+}
+
+th {
+    padding: 5px;
+    font-weight: 500;
+    text-align: left;
+    font-size: large;
 }
 
 .dropdown {
@@ -313,15 +309,16 @@ td {
         cursor: pointer;
     }
     .dropdown-btn {
-        background: linear-gradient(to right, orange, #b828d9);
-        border-radius: 3px;
+        background: linear-gradient(
+            to right,
+            rgb(255, 165, 0),
+            rgb(184, 40, 217)
+        ) !important;
         font-size: 1rem;
-        padding: 5%;
-        padding-left: 60%;
-        padding-right: 60%;
-    }
-    .dropdown-btn:hover {
-        background: linear-gradient(to right, rgb(255, 115, 0), #d000ff);
+        flex: 1;
+        margin: 0px;
+        border-radius: 0px !important;
+        width: 100%;
     }
     .dropdown-hide {
         display: none;
@@ -339,7 +336,7 @@ td {
 
 @keyframes slideDown {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
         opacity: 0;
     }
     100% {

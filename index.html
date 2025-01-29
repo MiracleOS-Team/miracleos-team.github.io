@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -7,169 +7,125 @@
 
         <title>MiracleOS</title>
 
-        <link rel="stylesheet" href="style/main.css"/>
+        <link rel="stylesheet" href="style/main.css" />
         <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="navbar-nonbs">
-            <div id="navbar-buttons-left" class="navbar-buttons">
-                <a class="navbar-shortcuts navbar-anchors mobile-hide-inline" href="index.html"
-                    >Home</a
-                >
-                <a
-                    class="navbar-shortcuts navbar-anchors"
-                    href="download/index.html"
-                    >Download</a
-                >
-                <a
-                    class="navbar-shortcuts navbar-anchors mobile-hide-inline"
-                    href="wiki/index.html"
-                    >Wiki</a
-                >
+        <div class="navbar-non-bs">
+            <div class="navbar-brand">
+                <img src="brand/color.png" alt="MiracleOS logo" />
+                <h2>MiracleOS</h2>
             </div>
-
-            <div class="navbar-center">
-                <img id="logonavbar" src="brand/color.png" alt="" />
-                <h2 id="navbar-name" class="mobile-hide-inline">MiracleOS</h2>
-            </div>
-            
-            <div class="navbar-buttons" id="navbar-buttons-right">
-                <a
-                    class="navbar-anchors navbar-buttons navbar-shortcuts mobile-hide-inline"
-                    href="contribute/index.html"
+            <div class="navbar-links">
+                <a class="navbar-link" href="index.html">Home</a>
+                <a class="navbar-link" href="download/index.html">Download</a>
+                <a class="navbar-link" href="wiki/index.html">Wiki</a>
+                <a class="navbar-link" href="contribute/index.html"
                     >Contribute</a
                 >
-                <a
-                    class="navbar-anchors navbar-buttons navbar-shortcuts mobile-hide-inline"
-                    href="https://packages.gentoo.org"
+                <a class="navbar-link" href="https://packages.gentoo.org"
                     >Packages</a
                 >
-                <a
-                    href="features/index.html"
-                    class="navbar-anchors navbar-buttons navbar-shortcuts"
-                    >About</a
-                >
+                <a class="navbar-link" href="features/index.html">About</a>
             </div>
-            <button id="mobile-dropdown" class="dropdown"><img src="misc-images/icons8-hamburger-menu.svg"></button>
+            <button id="mobile-dropdown" class="dropdown">
+                <img src="misc-images/menu-burger.svg" />
+            </button>
         </div>
         <div class="mains-main">
             <div id="mobile-dropdown-menu" class="dropdown-menu dropdown-hide">
                 <button id="home-mobile-btn" class="dropdown-btn">Home</button>
-                <button id="lrnmr-mobile-btn" class="dropdown-btn">About</button>
+                <button id="lrnmr-mobile-btn" class="dropdown-btn">
+                    About
+                </button>
                 <button id="wiki-mobile-btn" class="dropdown-btn">Wiki</button>
-                <button id="contrib-mobile-btn" class="dropdown-btn">Contribute</button>
+                <button id="contrib-mobile-btn" class="dropdown-btn">
+                    Contribute
+                </button>
             </div>
             <div class="main">
-                
                 <div class="slogan-container">
-                    <p id="slogan">A Friendly and Powerful OS for everyone</p>
+                    <h1 class="slogan-header">
+                        A friendly and powerful OS for everyone
+                    </h1>
                     <div class="cta-buttons">
-                        <button id="desk-download-btn" class="download mobile-hide-inline">Download</button>
-                        <button id="desk-lrnmr-btn" class="learn-more">Learn more</button>
+                        <button id="desk-download-btn" class="download">
+                            Download
+                        </button>
+                        <button id="desk-lrnmr-btn" class="learn-more">
+                            Learn more
+                        </button>
                     </div>
                 </div>
-                
-                
-                <p id="whyus">Why use MiracleOS?</p>
-                <div id="whyus-boxes">
-                    <div class="boxes inside-boxes">
+
+                <h2 id="why-us">Why use MiracleOS?</h2>
+
+                <div id="why-us-boxes">
+                    <div class="boxes grad-bg">
                         <img src="misc-images/magic-wand.svg" />
                         <div>
-                            <p class="b-title">Works Out of the Box<br/></p>
+                            <p class="b-title">Works Out of the Box</p>
                             <p>
-                                The OS is made to work Out of the Box, without any necessary
-                                user intervetion for it to work
+                                The OS is made to work Out of the Box, without
+                                any necessary user intervention for it to work
                             </p>
                         </div>
-                        
                     </div>
-                    <div class="boxes inside-boxes">
+                    <div class="boxes grad-bg">
                         <img src="misc-images/user.svg" />
                         <div>
-                            <p class="b-title">User First Model<br/></p>
+                            <p class="b-title">User First Model</p>
                             <p id="box1-text">
-                                We in MiracleOS always strive for a good user experience, independent if they're a experienced user or not
+                                We at MiracleOS strive for a good user
+                                experience, regardless of their experience.
                             </p>
                         </div>
-                        
                     </div>
-                    <div class="boxes inside-boxes">
+                    <div class="boxes grad-bg">
                         <img src="misc-images/joystick.svg" />
                         <div>
-                            <p class="b-title">Gaming<br/></p>
+                            <p class="b-title">Gaming</p>
                             <p>
-                                Play Steam games with Valve's Proton compability layer for
-                                Linux
+                                Play Steam games with Valve's Proton
+                                compatibility layer for Linux
                             </p>
                         </div>
-                        
                     </div>
-                    <div class="boxes inside-boxes">
+                    <div class="boxes grad-bg">
                         <img src="misc-images/box-open.svg" />
                         <div>
-                            <p class="b-title">Big selection of apps<br/></p>
+                            <p class="b-title">Big selection of apps</p>
                             <p>
-                                MiracleOS provides a big selection of apps for the user,
-                                such as Steam and Firefox, and provides compatibility with every major OS.
+                                MiracleOS offers a lot apps like Steam or
+                                Firefox and provides compatibility for every
+                                major OS.
                             </p>
                         </div>
-                        
                     </div>
-                    <div class="boxes inside-boxes">
+                    <div class="boxes grad-bg">
                         <img src="misc-images/IMG_3325.png" />
                         <div>
-                            <p class="b-title">Rock Solid Stability<br/></p>
+                            <p class="b-title">Rock Solid Stability</p>
                             <p class="stability">
-                                MiracleOS provides rock solid stability, free from any
-                                system instability
+                                MiracleOS provides rock solid stability, free
+                                from any system instability
                             </p>
                         </div>
-                        
                     </div>
-                    <div class="boxes inside-boxes">
+                    <div class="boxes grad-bg">
                         <img src="misc-images/rotate-left.svg" />
                         <div>
-                            <p class="b-title">Easy Rollbacks<br/></p>
+                            <p class="b-title">Easy Rollbacks</p>
                             <p>
-                                The optionnal BTRFS filesystem allows you to rollback a system to a
-                                certain point in time if anything bad happens
+                                The optional BTRFS filesystem allows you to
+                                rollback to a certain point in time if anything
+                                goes wrong
                             </p>
                         </div>
-                        
                     </div>
                 </div>
-                <p id="system-reqs">System Requirements</p>
-                <table class="system-reqs-table mobile-hide-block" >
-                    <thead>
-                        <tr>
-                            <th>Specification</th>
-                            <th>CPU</th>
-                            <th>Space</th>
-                            <th>GPU</th>
-                            <th>Boot type</th>
-                            <th>RAM</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Minimum</td>
-                            <td>2Ghz+ 64 bit CPU</td>
-                            <td>20GB</td>
-                            <td>Any Linux-supported GPU</td>
-                            <td>BIOS</td>
-                            <td>2Gb</td>
-                        </tr>
-                        <tr>
-                            <td>Recommended</td>
-                            <td>3Ghz+ 64 bit CPU</td>
-                            <td>100GB+</td>
-                            <td>A Vulkan Capable GPU</td>
-                            <td>UEFI</td>
-                            <td>8Gb</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="system-reqs-table mobile-show-block">
+                <p id="system-requirements">System Requirements</p>
+                <table class="system-requirements-table">
                     <thead>
                         <tr>
                             <th>System Requirements</th>
@@ -190,7 +146,9 @@
                         </tr>
                         <tr>
                             <td>GPU</td>
-                            <td>Any GPU made after 2000 and supported by Linux</td>
+                            <td>
+                                Any GPU made after 2000 and supported by Linux
+                            </td>
                             <td>A Vulkan Capable GPU</td>
                         </tr>
                         <tr>
@@ -206,6 +164,15 @@
                     </tbody>
                 </table>
             </div>
+            <footer>
+                <p>
+                    <span>MiracleOS Team</span>, licensed under
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.html"
+                        >GPL 3.0</a
+                    >. Inspired by
+                    <a href="https://www.youtube.com/@AbdiRPC4789">AR 4789</a>.
+                </p>
+            </footer>
         </div>
     </body>
-
+</html>

@@ -2,8 +2,10 @@
 *Organize this code
 *Make it responsive -> needs more testing
 *Nothing more, really :P
-
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+
 :root {
     --color-bg: #111111;
     --color-text-main: #ffffff;
@@ -11,8 +13,6 @@
     --wrapper-height: 87vh;
     --image-max-width: 300px;
     --image-margin: 3rem;
-    --font-family: "HK Grotesk";
-    --font-family-header: "HK Grotesk";
 }
 
 * {
@@ -20,62 +20,36 @@
     color: #ffffff;
 }
 
-[hidden] {
-    display: none !important;
-}
-
-a{
+a {
     color: white !important;
 }
 
-.footer .links {
-    padding: 0.5rem 1rem 1.5rem;
-    white-space: nowrap;
+img {
+    user-select: none !important;
 }
 
 html,
 body {
-    font-family: sans-serif;
+    font-family: "Jost";
     margin: 0;
     padding: 0;
 }
-
-html {
-    background-image: url("../brand/wallp.jpg");
+body {
+    background-image: url("../brand/wallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    size: 100%;
+    background-position: center;
+    min-height: 100vh;
 }
 
-.navbar-nonbs {
-    width: 100%;
-    height: 70px;
-    color: white;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(25px);
-    z-index: 1;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-}
-
-
-.main{
+.main, footer {
     transition: all 1s;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
-    margin: 15%;
-    margin-top: 100px;
+    margin: 10% 5%;
     overflow: auto;
-    padding: 5em;
+    padding: 2.5em;
     border-radius: 15px;
-}
-.main:hover{
-    backdrop-filter: blur(40px);
 }
 
 .mains-main {
@@ -87,132 +61,182 @@ html {
     overflow: auto;
 }
 
-.cta-buttons * {
-    margin: 15px;
-    font-size: 2rem;
+.cta-buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.cta-buttons button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+.cta-buttons button:nth-of-type(1) {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.cta-buttons button:nth-of-type(2) {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
 }
 
 .slogan-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-
-#slogan {
+.slogan-header {
     z-index: 10;
-    padding-top: 10%;
     font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 105%;
     animation: slideDown 0.75s ease-out;
-    user-select: none;
     font-weight: bold;
 }
 
-#logonavbar {
+.navbar-non-bs {
+    width: 100vw;
+    height: 80px;
+    padding: 20px 0px;
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    z-index: 99;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.navbar-brand {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navbar-brand img {
     margin-left: 10px;
     margin-right: 10px;
     height: 100%;
-
-    user-select: none;
-    
-}
-#navbar-name {
-    
-    user-select: none;
-
+    object-fit: scale-down;
+    aspect-ratio: 1/1;
 }
 
-.navbar-center {
-    height: 70px;
+.navbar-links {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin: 50px;
+    justify-content: center;
+    gap: 15px;
 }
 
-button:hover {
-    cursor: pointer;
-}
-.navbar-anchors {
-    position: relative;
-    font-size: 1.5rem;
+.navbar-link {
+    font-size: 1.25rem;
     text-decoration: none;
-    user-select: none;
-}
-.navbar-shortcuts {
-    padding: 1%;
-    margin: 15px;
     text-align: center;
+    animation: fadeIn 0.75s;
 }
 
 footer {
     margin-top: 0;
 }
-#whyus {
+
+#why-us {
     z-index: 1;
     font-size: 3rem;
+    margin: 20px 0px 10px 0px;
     animation: fadeIn 0.75s;
-    font-weight: bold;
+    font-weight: 600;
 }
+
 button {
     background: rgba(255, 115, 0, 0.4);
     border: none;
+    cursor: pointer;
     padding: 1%;
     border-radius: 15px !important;
     animation: fadeIn 0.75s;
     transition: all 1s;
 }
+
 button:hover {
     background: rgba(255, 115, 0, 0.8);
 }
 
-p {
-    user-select: none;
-    color: white;
+.grad-bg {
+    background: linear-gradient(
+        to right,
+        rgb(255, 165, 0),
+        rgb(184, 40, 217),
+        rgb(255, 115, 0),
+        rgb(208, 0, 255)
+    );
+    background-size: 250%;
+    background-position: 0%;
+    transition: background-position 1s;
 }
 
-.navbar-buttons {
+.grad-bg:hover {
+    background-position: 100%;
+}
+
+#why-us-boxes {
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
     flex-direction: row;
-    position: relative;
-    animation: fadeIn 0.75s;
-}
-
-#whyus-boxes {
-    
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
     z-index: 0;
-    animation: fadeIn 0.75s;
 }
-
-
 
 .boxes {
-    background: linear-gradient(to right, orange, #b828d9);
-    border-radius: 15px;
-    padding: 15px;
-    transition: all 1s;
+    border-radius: 5px;
+    padding: 30px;
+    flex: 1;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    height: fit-content;
 }
 
-.boxes:hover {
-    background: linear-gradient(to right, rgb(255, 115, 0), #d000ff);
+.boxes:nth-of-type(2),
+.boxes:nth-of-type(4),
+.boxes:nth-of-type(6) {
+    background-position: 220%;
 }
 
-.boxes * {
-    display: inline;
+.boxes:nth-of-type(2):hover,
+.boxes:nth-of-type(4):hover,
+.boxes:nth-of-type(6):hover {
+    background-position: 170%;
 }
 
 .boxes img {
     height: 35px;
-    position: absolute;
-    margin-top: 30px;
 }
 
 .boxes div {
-    display: inline-block;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .boxes p {
@@ -220,34 +244,21 @@ p {
     overflow: hidden;
     text-overflow: clip;
     max-width: 75ch;
+    color: black !important;
 }
 
 .boxes .b-title {
     font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
 }
 
-img {
-    user-select: none;
-}
-#system-reqs {
-    
+#system-requirements {
     font-weight: bold;
     font-size: 3rem;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 0px;
-    
-
-    border-style: solid;
-    border-color: white;
-}
-
-
-.system-reqs-table {
+.system-requirements-table {
     background-color: rgba(184, 40, 217, 0.2);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
@@ -260,135 +271,69 @@ td {
     text-align: center;
 }
 
-.mobile-show-block {
-    display: none;
-}
-.mobile-show-inline {
-    display: none;
-}
-.mobile-show-inline-block {
-    display: none;
-}
-
-.dropdown{
+.dropdown {
     display: none;
     background-color: transparent;
 }
 
-#navbar-buttons-left,
-#navbar-buttons-right {
-    flex: 0;
-}
-
-.dropdown-menu{
+.dropdown-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    min-height: 70vh;
+    z-index: 999;
+    display: flex;
+    color: white;
+    margin-top: 8vh;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    gap: 5px;
+    flex-direction: column;
+    visibility: visible;
+    overflow-x: hidden;
     visibility: hidden;
 }
 
-@media (max-width: 1280px) {
-    .main {
-        margin: 0px;
-        padding: 10px;
-    }
-    .mains-main {
-        padding-top: 70px;
-    }
-    #whyus-boxes {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .mobile-hide-block {
-        display: none;
-    }
-    .mobile-show-block {
-        display: block
-    }
-
-    .mobile-show-inline {
-        display: inline
-    }
-    .mobile-hide-inline-block {
-        display: none;
-    }
-    .mobile-show-inline-block {
-        display: inline-block
-    }
-    html {
-        background: #111111;
-    }
-    .cta-buttons *{
-        font-size: 1.75rem;
-        padding: 15px;
-    }
-    #slogan {
-        font-size: 3rem;
-    }
-    #whyus {
-        font-size: 2rem;
-    }
-    #system-reqs {
-        font-size: 2rem;
-    }
-    .navbar-buttons, .navbar-shortcuts {
-        font-size: 1rem;
-        width: 100%;
-    }
-    .logonavbar {
-        height: 50%;
-    }
-
+#mobile-dropdown img {
+    height: 40px;
+    object-fit: scale-down;
 }
-@media (max-width: 899px) {
-    .mobile-hide-inline {
+
+@media (max-width: 1000px) {
+    .navbar-link {
         display: none;
     }
-    .navbar-buttons{
-        display: none;
-    }
-    .dropdown-menu{
-        display: flex;
-        color: white;
-        margin-top: 8vh;
-        justify-content: center;
-        align-items: center;
-        list-style-type:none;
-        margin: auto;
-        gap: 5px;
-        flex-direction: column;
+    .dropdown-menu {
         visibility: visible;
-        overflow-x: hidden;
-    } 
-    .dropdown-button:hover{
+    }
+    .dropdown-button:hover {
         cursor: pointer;
     }
-    .dropdown-btn{
+    .dropdown-btn {
         background: linear-gradient(to right, orange, #b828d9);
         border-radius: 3px;
         font-size: 1rem;
         padding: 5%;
-        padding-left:60%;
-        padding-right:60%;
+        padding-left: 60%;
+        padding-right: 60%;
     }
     .dropdown-btn:hover {
         background: linear-gradient(to right, rgb(255, 115, 0), #d000ff);
     }
-    #home-mobile-btn{
-        margin-top: 0vh;
-    }
-    .dropdown-hide{
+    .dropdown-hide {
         display: none;
     }
-    #mobile-dropdow-menu{
-        margin-left: 48%;
-        overflow-x: hidden;
-    }
-    #logonavbar{
+    #logo-navbar {
         position: absolute;
         margin-left: 3.8%;
     }
-    #mobile-dropdown{
+    #mobile-dropdown {
         display: flex;
-        margin-left: 80%;
-        position: absolute;
-        visibility: visible;
+        align-items: center;
+        justify-content: center;
     }
 }
 

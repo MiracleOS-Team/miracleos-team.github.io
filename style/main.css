@@ -34,7 +34,7 @@ body {
     min-height: 100vh;
 }
 
-.main,
+.main-content,
 footer {
     transition: all 1s;
     background-color: rgba(0, 0, 0, 0.2);
@@ -43,15 +43,6 @@ footer {
     overflow: auto;
     padding: 2.5em;
     border-radius: 15px;
-}
-
-.mains-main {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    overflow: auto;
 }
 
 .cta-buttons {

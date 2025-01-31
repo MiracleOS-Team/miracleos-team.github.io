@@ -52,11 +52,6 @@ footer {
     gap: 5px;
 }
 
-.cta-buttons button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-}
-
 /* TODO - change when we add back buttons at index.html */
 .cta-buttons a:nth-of-type(1) button {
     border-top-right-radius: 5px !important;
@@ -154,7 +149,8 @@ button {
     background-color: rgba(255, 115, 0, 0.4);
     border: none;
     cursor: pointer;
-    padding: 1%;
+    font-size: 1.25em;
+    padding: 10px 20px;
     border-radius: 10px;
     transition: background-color 1s;
     font-family: "Jost";

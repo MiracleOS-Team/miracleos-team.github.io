@@ -39,10 +39,15 @@ footer {
     transition: all 1s;
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-    margin: 10%;
+    margin: 10% 10% 5% 10%;
     overflow: auto;
     padding: 2.5em;
     border-radius: 15px;
+}
+
+footer {
+    margin-top: 0;
+    padding: 1em 2.5em;
 }
 
 .cta-buttons {
@@ -200,7 +205,6 @@ button:hover {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-    height: fit-content;
 }
 
 .boxes:nth-of-type(2),

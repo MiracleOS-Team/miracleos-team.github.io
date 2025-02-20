@@ -31,8 +31,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 100vh; 
+    margin-top: 80px; 
 }
+
 
 .main-content,
 footer {
@@ -326,6 +328,36 @@ th {
         align-items: center;
         justify-content: center;
     }
+  .main-content {
+    padding: 1em;
+  }
+  .slogan-header {
+    font-size: 30px;
+    text-align: center;
+  }
+  .cta-buttons {
+    width: 100%;
+  }
+  .coming-soon {
+    text-align: center;
+    width: 100%;
+  }
+  .why-use {
+    text-align: center;
+    font-size: 25px;
+  }
+  .main-content, footer {
+    margin: 25% 5% 2% 5%
+  }
+  .boxes {
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+  }
 }
 
 @keyframes slideDown {

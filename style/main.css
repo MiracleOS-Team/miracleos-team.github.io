@@ -354,8 +354,11 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 0;
+    text-align: center;
+  }
+  .b-title {
+    width: 100%;
     text-align: center;
   }
 }

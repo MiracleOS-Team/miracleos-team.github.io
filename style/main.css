@@ -7,260 +7,259 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
 
 * {
-    box-sizing: border-box;
-    color: #ffffff;
+  box-sizing: border-box;
+  color: #ffffff;
 }
 
 a {
-    color: white !important;
+  color: white !important;
 }
 
 img {
-    user-select: none !important;
+  user-select: none !important;
 }
 
 html,
 body {
-    font-family: "Jost";
-    margin: 0;
-    padding: 0;
+  font-family: "Jost";
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("../brand/wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh; 
-    margin-top: 80px; 
+  background-image: url("../brand/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: 80px;
 }
-
 
 .main-content,
 footer {
-    transition: all 1s;
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
-    margin: 10% 10% 5% 10%;
-    overflow: auto;
-    padding: 2.5em;
-    border-radius: 15px;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  margin: 10% 10% 5% 10%;
+  overflow: auto;
+  padding: 2.5em;
+  border-radius: 15px;
 }
 
 footer {
-    margin-top: 0;
-    padding: 1em 2.5em;
+  margin-top: 0;
+  padding: 1em 2.5em;
 }
 
 .cta-buttons {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
 /* TODO - change when we add back buttons at index.html */
 .cta-buttons a:nth-of-type(1) button {
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
 }
 
 .cta-buttons a:nth-of-type(2) button {
-    border-top-left-radius: 5px !important;
-    border-bottom-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
 }
 
 .slogan-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .slogan-header {
-    z-index: 10;
-    font-size: 5rem;
-    margin: 0;
-    padding: 0;
-    line-height: 105%;
-    animation: slideDown 0.75s ease-out;
-    font-weight: bold;
+  z-index: 10;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  line-height: 105%;
+  animation: slideDown 0.75s ease-out;
+  font-weight: bold;
 }
 
 .navbar-non-bs {
-    width: 100vw;
-    height: 80px;
-    padding: 20px 0px;
-    color: white;
-    gap: 100px;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 399;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    animation: fadeIn 0.75s;
+  width: 100vw;
+  height: 80px;
+  padding: 20px 0px;
+  color: white;
+  gap: 100px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 399;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  animation: fadeIn 0.75s;
 }
 
 .navbar-brand {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-brand h3 {
-    font-size: x-large;
-    font-weight: 600;
+  font-size: x-large;
+  font-weight: 600;
 }
 
 .navbar-brand img {
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 100%;
-    object-fit: scale-down;
-    aspect-ratio: 1/1;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  object-fit: scale-down;
+  aspect-ratio: 1/1;
 }
 
 .navbar-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .navbar-link {
-    font-size: 1.25rem;
-    text-decoration: none;
-    text-align: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 .navbar-link:hover {
-    color: rgb(255, 165, 0) !important;
+  color: rgb(255, 165, 0) !important;
 }
 
 h2 {
-    z-index: 1;
-    font-size: 3rem;
-    margin: 20px 0px 10px 0px;
-    font-weight: 600;
+  z-index: 1;
+  font-size: 3rem;
+  margin: 20px 0px 10px 0px;
+  font-weight: 600;
 }
 
 button {
-    background-color: rgba(255, 115, 0, 0.4);
-    border: none;
-    cursor: pointer;
-    font-size: 1.25em;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: background-color 1s;
-    font-family: "Jost";
-    font-weight: 600;
-    font-size: medium;
+  background-color: rgba(255, 115, 0, 0.4);
+  border: none;
+  cursor: pointer;
+  font-size: 1.25em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 1s;
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: medium;
 }
 
 button:hover {
-    background: rgba(255, 115, 0, 1);
-    color: black;
+  background: rgba(255, 115, 0, 1);
+  color: black;
 }
 
 .grad-bg {
-    background: linear-gradient(
-        to right,
-        rgb(255, 165, 0),
-        rgb(184, 40, 217),
-        rgb(255, 115, 0),
-        rgb(208, 0, 255)
-    );
-    background-size: 250%;
-    background-position: 0%;
-    transition: background-position 1s;
+  background: linear-gradient(
+    to right,
+    rgb(255, 165, 0),
+    rgb(184, 40, 217),
+    rgb(255, 115, 0),
+    rgb(208, 0, 255)
+  );
+  background-size: 250%;
+  background-position: 0%;
+  transition: background-position 1s;
 }
 
 .grad-bg:hover {
-    background-position: 100%;
+  background-position: 100%;
 }
 
 #why-us-boxes {
-    display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    z-index: 0;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 0;
 }
 
 .boxes {
-    border-radius: 5px;
-    padding: 30px;
-    flex: 1;
-    flex-basis: 40%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
+  border-radius: 5px;
+  padding: 30px;
+  flex: 1;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .boxes:nth-of-type(2),
 .boxes:nth-of-type(4),
 .boxes:nth-of-type(6) {
-    background-position: 220%;
+  background-position: 220%;
 }
 
 .boxes:nth-of-type(2):hover,
 .boxes:nth-of-type(4):hover,
 .boxes:nth-of-type(6):hover {
-    background-position: 170%;
+  background-position: 170%;
 }
 
 .boxes img {
-    height: 35px;
+  height: 35px;
 }
 
 .boxes div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .boxes p {
-    display: block;
-    overflow: hidden;
-    text-overflow: clip;
-    max-width: 75ch;
-    color: black !important;
+  display: block;
+  overflow: hidden;
+  text-overflow: clip;
+  max-width: 75ch;
+  color: black !important;
 }
 
 .boxes .b-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 .system-requirements-table {
-    background-color: rgba(184, 40, 217, 0.2);
-    border-radius: 15px;
-    width: 100%;
+  background-color: rgba(184, 40, 217, 0.2);
+  border-radius: 15px;
+  width: 100%;
 }
 
 td {
-    padding: 5px;
+  padding: 5px;
 }
 
 th {
-    padding: 5px;
-    font-weight: 500;
-    text-align: left;
-    font-size: large;
+  padding: 5px;
+  font-weight: 500;
+  text-align: left;
+  font-size: large;
 }
 
 .dropdown {
@@ -269,65 +268,63 @@ th {
 }
 
 .dropdown-menu {
-    position: fixed;
-    top: 80px;
-    left: 0;
-    right: 0;
-    min-height: 70vh;
-    z-index: 999;
-    display: flex;
-    color: white;
-    margin-top: 8vh;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: auto;
-    gap: 5px;
-    flex-direction: column;
-    visibility: visible;
-    overflow-x: hidden;
-    visibility: hidden;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#mobile-dropdown img {
-    height: 40px;
-    object-fit: scale-down;
+.dropdown-btn {
+  background: linear-gradient(to right, rgb(255, 165, 0), rgb(184, 40, 217));
+  font-size: 1rem;
+  margin: 10px 0px;
+  width: 90%;
+  height: 10%;
+  border-radius: 10px;
+}
+.dropdown-btn:hover {
+  cursor: pointer;
+}
+
+.dropdown img {
+  height: 40px;
+  object-fit: scale-down;
 }
 
 @media (max-width: 1000px) {
-    .navbar-link {
-        display: none;
-    }
-    .dropdown-menu {
-        visibility: visible;
-    }
-    .dropdown-button:hover {
-        cursor: pointer;
-    }
-    .dropdown-btn {
-        background: linear-gradient(
-            to right,
-            rgb(255, 165, 0),
-            rgb(184, 40, 217)
-        ) !important;
-        font-size: 1rem;
-        flex: 1;
-        margin: 0px;
-        border-radius: 0px !important;
-        width: 100%;
-    }
-    .dropdown-hide {
-        display: none;
-    }
-    #logo-navbar {
-        position: absolute;
-        margin-left: 3.8%;
-    }
-    #mobile-dropdown {
+  .navbar-link {
+    display: none;
+  }
+  
+  .dropdown-menu {
+    visibility: visible;
+  }
+  
+  #logo-navbar {
+    position: absolute;
+    margin-left: 3.8%;
+  }
+  
+  .dropdown {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+  
+  .dropdown:hover {
+    background-color: transparent;
+}
+
   .main-content {
     padding: 1em;
   }
@@ -346,8 +343,9 @@ th {
     text-align: center;
     font-size: 25px;
   }
-  .main-content, footer {
-    margin: 25% 5% 2% 5%
+  .main-content,
+  footer {
+    margin: 25% 5% 2% 5%;
   }
   .boxes {
     flex-basis: 0;
@@ -364,21 +362,21 @@ th {
 }
 
 @keyframes slideDown {
-    0% {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
